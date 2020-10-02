@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2bf2c183-c03b-4349-ab2f-5953666b90df" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1dEVlyV2nruZ1yfNJAidqHX5Sb7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="JarApplication" nameIsGenerated="true">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="12" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bf2c183-c03b-4349-ab2f-5953666b90df" name="Default Changelist" comment="" />
+      <created>1591990393626</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591990393626</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="266" y="59" key="#Project_Structure" timestamp="1591990406025">
+      <screen x="0" y="23" width="1680" height="950" />
+    </state>
+    <state x="266" y="59" key="#Project_Structure/0.23.1680.950@0.23.1680.950" timestamp="1591990406025" />
+    <state x="416" y="139" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593017731792">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="416" y="139" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.947@0.23.1680.947" timestamp="1593017731792" />
+    <state x="689" y="274" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1593017730675">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="689" y="274" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1680.947@0.23.1680.947" timestamp="1593017730675" />
+    <state width="658" height="248" key="GridCell.Tab.0.bottom" timestamp="1593017055623">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="658" height="248" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1593017055623" />
+    <state width="658" height="248" key="GridCell.Tab.0.center" timestamp="1593017055622">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="658" height="248" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1593017055622" />
+    <state width="658" height="248" key="GridCell.Tab.0.left" timestamp="1593017055622">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="658" height="248" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1593017055622" />
+    <state width="658" height="248" key="GridCell.Tab.0.right" timestamp="1593017055623">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="658" height="248" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1593017055623" />
+    <state x="487" y="184" key="NewModule_or_Project.wizard" timestamp="1593017835794">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="487" y="184" key="NewModule_or_Project.wizard/0.23.1680.947@0.23.1680.947" timestamp="1593017835794" />
+    <state x="146" y="163" key="new project wizard" timestamp="1593016908507">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="146" y="163" key="new project wizard/0.23.1680.947@0.23.1680.947" timestamp="1593016908507" />
+    <state x="146" y="163" key="new project wizard/0.23.1680.950@0.23.1680.950" timestamp="1591990473904" />
+    <state x="617" y="219" key="run.anything.popup" timestamp="1593016291821">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="617" y="219" key="run.anything.popup/0.23.1680.947@0.23.1680.947" timestamp="1593016291821" />
+  </component>
+</project>
