@@ -66,6 +66,11 @@
     display: inline-block;
 }
 
+.bottom b {
+    padding: 0px 0px;
+    display: inline-block;
+}
+
 .copyright {
     padding: 10px 10px;
     text-align: center;
