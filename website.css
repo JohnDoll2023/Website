@@ -2,12 +2,15 @@
     background-image: url("IMG_0125.png");
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: .1;
+    /*opacity: .1;*/
+    background-color: rgba(255,255,255,0.9);
+    background-blend-mode: lighten;
     top: 63px;
     right: 0px;
     left: 0px;
     bottom: 0px;
     position: fixed;
+    z-index: -5;
 }
 
 .menu {
@@ -16,6 +19,9 @@
     min-height: 63px;
     height: 63px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 0;
+    width: 100%;
+    position: fixed;
 }
 
 .menu a {
@@ -81,6 +87,7 @@
   .column {
       float: left;
       width: 50%;
+      /*margin: 1%;*/
   }
 
   .row:after {
@@ -89,6 +96,8 @@
     clear: both;
   }
 
-  .opaque {
-      opacity: 1;
+  .resume {
+      margin-left: 50%;
+      margin-right: 50%;
+      margin-top: 10%;
   }
