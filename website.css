@@ -102,9 +102,16 @@
   }
 
   .resume {
-      margin-left: 50%;
-      margin-right: 50%;
+      margin-left: 30%;
       margin-top: 10%;
+      float: right;
+  }
+
+  .resumewords {
+      margin-right: 30%;
+      margin-top: 10%;
+      float: left;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   p {
