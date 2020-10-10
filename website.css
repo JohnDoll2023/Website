@@ -91,7 +91,7 @@
 
   .column {
       float: left;
-      margin-left: 20%;
+      margin-left: 10%;
       margin-top: 10%;
       /*margin: 1%;*/
   }
@@ -119,4 +119,8 @@
       margin-left: 40%;
       margin-right: 40%;
       margin-top: 10%;
+  }
+
+  p1 {
+      font-family: tahoma;
   }
