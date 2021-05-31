@@ -27,9 +27,21 @@ footer {
     color:#fff;
   }
 
-  .container {
+.container {
     border: 1px solid grey;
     border-radius: 10px;
     padding: 10px;
     margin-top: 5%;
+}
+
+.header {
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .desktop-break {display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    .mobile-break {display: none;}
 }
