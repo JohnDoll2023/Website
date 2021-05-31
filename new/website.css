@@ -12,3 +12,24 @@
     position: fixed;
     z-index: -5;
 }
+
+body {
+    padding-top: 130px;
+    padding-bottom: 150px;
+}
+
+p {
+    font-size: 40px;
+}
+
+footer {
+    background-color: #333;
+    color:#fff;
+  }
+
+  .container {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5%;
+}
