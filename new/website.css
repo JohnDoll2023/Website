@@ -45,3 +45,7 @@ footer {
 @media screen and (min-width: 1200px) {
     .mobile-break {display: none;}
 }
+
+p {
+    font-weight: bold;   
+}
