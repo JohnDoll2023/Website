@@ -27,11 +27,12 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+        <!--JavaScript-->
+        <script src="website.js?rev=1"></script>
         <title> John Doll - Home </title>
     </head>
     <div id=background></div>
-    <body class="d-flex flex-column min-vh-100">
+    <body class="d-flex flex-column min-vh-100" onload="fader()">
         <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark collapse navbar-collapse" role="navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -62,6 +63,16 @@
                 </div>
             </div>
         </nav>
+        <div class="row m-0">
+            <div class="col-sm-12 col-xl-3 align-items-center text-center justify-content-center">
+                 <img src="images/doll.jpg" alt="Picture of John Doll" style="max-width: 100%;">
+            </div>
+            <div class="col-sm-12 col-xl-5 d-flex align-items-center text-xl-left text-sm-center justify-content-xl-start justify-content-sm-center">
+                <h5>
+                    My name is <span id="fade" class="fade-in">John Doll</span> and I am a junior at Miami University. <br> I like to <span class="word-in" id="word"></span>
+                </h5>
+            </div>
+        </div>
         <footer class="page-footer font-small navbar-dark bg-dark lighten-3 pt-4 fixed-bottom">
             <ul class="list-unstyled list-inline text-center">
                 <!--<li class="list-inline-item">

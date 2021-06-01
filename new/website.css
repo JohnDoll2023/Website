@@ -49,3 +49,26 @@ footer {
 p {
     font-weight: bold;   
 }
+
+.fade-in {
+    opacity:0;
+    transition: 4s;
+}
+
+.word-in {
+    animation: infinite;
+    animation-name: rotate;
+    animation-duration: 2.0s;
+    animation-delay: 2.0s;
+}
+
+@keyframes rotate {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+      }
+      50%, 100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+}
