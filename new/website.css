@@ -27,7 +27,7 @@ footer {
     color:#fff;
   }
 
-.container {
+.contactcontainer {
     border: 1px solid grey;
     border-radius: 10px;
     padding: 10px;
@@ -57,12 +57,50 @@ p {
 
 .word-in {
     animation: infinite;
-    animation-name: rotate;
+    animation-name: fadein;
     animation-duration: 2.0s;
     animation-delay: 2.0s;
 }
 
-@keyframes rotate {
+.projects {
+    opacity: 0;
+}
+
+.projects:nth-of-type(1) {
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.projects:nth-of-type(2) {
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.projects:nth-of-type(3) {
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.projects:nth-of-type(4) {
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+}
+
+.projects:nth-of-type(5) {
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
     0% {
         opacity: 0;
         transform: translate3d(0, 50px, 0);
