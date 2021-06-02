@@ -123,3 +123,13 @@ p {
 ::-webkit-input-placeholder {
     color:lightgray !important;
 }
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(2);
+    z-index: 5;
+
+}
