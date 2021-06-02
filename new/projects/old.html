@@ -27,11 +27,12 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+        <!--JavaScript-->
+        <script src="../website.js?rev=1"></script>
         <title> John Doll - Projects </title>
     </head>
     <div id=background></div>
-    <body>
+    <body onload="fader()">
         <nav class="navbar navbar-expand-xl fixed-top navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -64,7 +65,7 @@
         </nav>
         <div class="row m-0">
             <div class="col-sm-12 offset-xl-1 col-xl-11">
-                <p>Ol' (but not very) Reliable</p>
+                <p>Ol' <span id="fade" class="fade-in">(but not very)</span><span class=""> Reliable</span></p>
             </div>
         </div>
         <div class="row m-0">

@@ -120,6 +120,28 @@ p {
       }
 }
 
+.slide-over {
+    
+
+}
+
+.slide-over:nth-of-type(1){
+    transform: translate(100px, 0);
+}
+
+.slide-over:nth-of-type(2){
+    transform: translate(100px, 0);
+}
+
+@keyframes slideright {
+    0% {
+        transform: translate(100px, 0);
+      }
+      50%, 100% {
+        transform: translate(200px, 0);
+      }
+}
+
 ::-webkit-input-placeholder {
     color:lightgray !important;
 }
