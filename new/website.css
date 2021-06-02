@@ -46,6 +46,15 @@ footer {
     .mobile-break {display: none;}
 }
 
+@media (max-width: 1200px) {
+    p {font-size: 80px}
+    label {font-size: 60px !important}
+    a {font-size: 40px !important}
+    h3 {font-size: 45px !important}
+    h4 {font-size: 40px !important}
+    h5 {font-size: 35px !important}
+}
+
 p {
     font-weight: bold;   
 }
@@ -109,4 +118,8 @@ p {
         opacity: 1;
         transform: translate3d(0, 0, 0);
       }
+}
+
+::-webkit-input-placeholder {
+    color:lightgray !important;
 }
