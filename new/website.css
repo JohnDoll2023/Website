@@ -131,7 +131,7 @@ p {
     @keyframes fadein2 {
         0% {
             opacity: 0;
-            transform: translate3d(-190%, 0, 0);
+            transform: translate3d(-180%, 0, 0);
         }
         50%, 100% {
             opacity: 1;
@@ -148,7 +148,7 @@ p {
         }
         50%, 100% {
             opacity: 1;
-            transform: translate3d(0, 0, 0);
+            transform: translate3d(0%, 0, 0);
         }
     }
 }
