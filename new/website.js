@@ -1,11 +1,11 @@
 $(document).ready(function(){
-    //setInterval(rotator, 2000);
+    setInterval(rotator, 2000);
 });
 
 function fader() {
-    setInterval(rotator, 2000);
-    document.getElementById("fade").style.opacity = 1;
     
+    document.getElementById("fade").style.opacity = 1;
+    //setInterval(rotator, 2000);
 }
 
 function rotator() {   

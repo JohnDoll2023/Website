@@ -109,6 +109,13 @@ p {
     animation-fill-mode: forwards;
 }
 
+.projects:nth-of-type(6) {
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-delay: 7.5s;
+    animation-fill-mode: forwards;
+}
+
 @keyframes fadein {
     0% {
         opacity: 0;
