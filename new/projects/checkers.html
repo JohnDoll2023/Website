@@ -27,11 +27,12 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+        <!--JavaScript-->
+        <script src="../website.js?rev=1"></script>
         <title> John Doll - Projects </title>
     </head>
     <div id=background></div>
-    <body>
+    <body onresize="resize()">
         <nav class="navbar navbar-expand-xl fixed-top navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -85,6 +86,24 @@
                 </div>
             </div>
         </nav>
+        <div class="row m-0">
+            <div class="col-sm-12 col-xl-4 d-flex align-items-center text-center justify-content-center">
+                <img src="../images/projects/checkers/checkerscode.png" id="code" alt="Picture of code" style="max-width: 100%;">
+           </div>
+           <div class="col-sm-12 col-xl-4 d-flex align-items-center text-xl-left text-sm-center justify-content-center justify-content-sm-center">
+               <h5><br class="mobile-break">I created my first website without the use of Bootstrap and now, Bootstrap has saved my life. You wouldn't believe the pain I felt when I figured out that creating a navigation bar can be done with just
+                   a few lines in Bootstrap, after I had spent an entire day creating my own custom navigation bar way back when. Switching my navbar over to Bootstrap was about the first thing I did when writing up the
+                   code behind this website. That and my footer, which I also built on my own way back when, and now simply create with Bootstrap. Also, the grid system. Several hours of work converted to minutes by 
+                   beautiful Bootstrap. Enough about Bootstrap though, how is this website hosted?
+               </h5>
+           </div>
+           <div class="col-sm-12 col-xl-4 d-flex align-items-center text-center justify-content-center">
+                <video id="video" controls autoplay muted style="max-width: 100%;" onplay="resize()">
+                    <source src="../images/projects/checkers/checkers.mov" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+            </div>
+        </div>
         <script data-ad-client="ca-pub-6133927826761152" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <footer class="page-footer font-small navbar-dark bg-dark lighten-3 pt-4 fixed-bottom">
             <ul class="list-unstyled list-inline text-center">
