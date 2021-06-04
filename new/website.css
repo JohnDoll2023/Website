@@ -23,7 +23,6 @@ p {
 }
 
 footer {
-    background-color: #333;
     color:#fff;
   }
 
@@ -32,10 +31,6 @@ footer {
     border-radius: 10px;
     padding: 10px;
     margin-top: 5%;
-}
-
-.header {
-    justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -62,13 +57,6 @@ p {
 .fade-in {
     opacity:0;
     transition: 4s;
-}
-
-.word-in {
-    animation: infinite;
-    animation-name: fadein;
-    animation-duration: 2.0s;
-    animation-delay: 2.0s;
 }
 
 .projects {
@@ -114,6 +102,13 @@ p {
     animation-duration: 1.5s;
     animation-delay: 7.5s;
     animation-fill-mode: forwards;
+}
+
+.word-in {
+    animation: infinite;
+    animation-name: fadein;
+    animation-duration: 3.0s;
+    animation-delay: 3.00s;
 }
 
 @keyframes fadein {
