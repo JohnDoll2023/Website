@@ -158,7 +158,7 @@ p {
     animation-fill-mode: forwards;
 }
 
-::-webkit-input-placeholder {
+::placeholder {
     color:lightgray !important;
 }
 
