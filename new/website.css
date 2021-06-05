@@ -109,15 +109,15 @@ footer {
     animation: infinite;
     animation-name: fadein;
     animation-duration: 3.0s;
-    animation-delay: 2.98s;
+    animation-delay: 3s;
 }
 
 @keyframes fadein {
-    0% {
+    0%, 10% {
         opacity: 0;
         transform: translate3d(0, 50px, 0);
       }
-      20%, 80% {
+      30%, 70% {
         opacity: 1;
         transform: translate3d(0, 0, 0);
       }
