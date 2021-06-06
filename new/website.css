@@ -14,11 +14,16 @@
 }
 
 .navbg {
-    background-color: #303030;
+    background-color: #757575;
+    color: black !important;
+}
+
+.buttonbg {
+    border: 1px solid black !important;
+    background-color: black;
 }
 
 body {
-    padding-top: 130px;
     padding-bottom: 150px;
 }
 
