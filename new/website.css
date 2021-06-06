@@ -18,6 +18,14 @@
     color: black !important;
 }
 
+nav .active {
+    color:white !important;
+}
+
+.navbg :hover {
+    color:#a9a9a9 !important;
+}
+
 .buttonbg {
     border: 1px solid black !important;
     background-color: black;
