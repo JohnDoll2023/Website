@@ -43,21 +43,19 @@ footer {
     margin-top: 5%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
     .desktop-break {display: none;}
-}
-
-@media screen and (min-width: 1200px) {
-    .mobile-break {display: none;}
-}
-
-@media (max-width: 1200px) {
     p {font-size: 80px}
     label {font-size: 35px !important}
-    a {font-size: 40px !important}
     h3 {font-size: 45px !important}
     h4 {font-size: 40px !important}
     h5 {font-size: 35px !important}
+    h6 {font-size: 30px !important}
+    nav a {font-size: 40px !important;}
+}
+
+@media screen and (min-width: 993px) {
+    .mobile-break {display: none;}
 }   
 
 .fade-in {
@@ -144,7 +142,7 @@ footer {
       }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
     @keyframes fadein2 {
         0% {
             opacity: 0;
@@ -157,11 +155,11 @@ footer {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 993px) {
     @keyframes fadein2 {
         0% {
             opacity: 0;
-            transform: translate3d(-250%, 0, 0);
+            transform: translate3d(-150%, 0, 0);
         }
         50%, 100% {
             opacity: 1;
@@ -185,7 +183,7 @@ footer {
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 993px) {
     .zoom {transition: transform .2s;}
     .zoom:hover {
         transform: scale(2);
