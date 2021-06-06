@@ -1,16 +1,11 @@
-#background {
-    background-image: url("images/IMG_0125.png");
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                  url("images/IMG_0125.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(255,255,255,0.9);
-    background-blend-mode: lighten;
-    top: 63px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
     background-position: center;
-    position: fixed;
-    z-index: -5;
+    background-attachment: fixed;
+    padding-bottom: 150px;
 }
 
 .navbg {
@@ -22,17 +17,13 @@ nav .active {
     color:white !important;
 }
 
-.navbg :hover {
+.nav-item :hover {
     color:#a9a9a9 !important;
 }
 
 .buttonbg {
     border: 1px solid black !important;
     background-color: black;
-}
-
-body {
-    padding-bottom: 150px;
 }
 
 h5 {
