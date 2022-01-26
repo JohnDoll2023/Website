@@ -2,6 +2,7 @@ var history;
 
 $(document).ready(function(){
     setInterval(rotator, 3000);
+    document.getElementById('copyright').innerHTML = "Copyright © John Doll " + new Date().getFullYear();
 });
 
 function fader() {
