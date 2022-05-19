@@ -202,3 +202,19 @@ footer {
         z-index: 5;
     }
 }
+
+@media screen and (min-width: 544px) {
+    p1 {font-size: 30px;
+        font-weight: bold; }
+}
+@media screen and (min-width: 768px) {
+    p1 {font-size: 40px;
+        font-weight: bold; }
+}
+@media screen and (min-width: 992px) {
+    p1 {font-size: 40px;
+        font-weight: bold; }
+}
+
+
+
