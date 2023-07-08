@@ -3,65 +3,127 @@ var history;
 $(document).ready(function(){
     setInterval(rotator, 3000);
     footer();
+    navbar();
+});
 
-    /*document.getElementById('nav').innerHTML = `
+function navbar() {
+    // get document location
+    var path = document.location.pathname;
+
+    // count number of slashes
+    var count = path.split('/').length;
+
+    // qualifcations path
+    var qualifications = "qualifications/";
+
+    // projects path
+    var projects = "projects/";
+
+    // base path
+    var base = "";
+
+    // aria variables
+    var indexAria = false;
+    var projectsAria = false;
+    var resumeAria = false;
+    var qualificationsAria = false;
+    var contactAria = false;
+
+    // active variable
+    var indexActive = "";
+    var projectsActive = "";
+    var resumeActive = "";
+    var qualificationsActive = "";
+    var contactActive = "";
+
+    if (count != 6) {
+        // if not on home page, set base path
+        base = "../";
+        
+        // if on qualifications page, set qualifications path
+        if (path.includes(qualifications)) {
+            qualifications = "";
+            projects = "../" + projects;
+            qualificationsAria = "page";
+            qualificationsActive = "active";
+        }
+
+        // if on projects page, set projects path
+        if (path.includes(projects)) {
+            projects = "";
+            qualifications = "../" + qualifications;
+            projectsAria = "page";
+            projectsActive = "active";
+        }
+    } else {
+        // check if on index page
+        if (path.includes("index.html")) {
+            indexAria = "page";
+            indexActive = "active";;
+        } else if (path.includes("resume.html")) {
+            resumeAria = "page";
+            resumeActive = "active";
+        } else if (path.includes("contact.html")) {
+            contactAria = "page";
+            contactActive = "active";
+        }
+    }
+
+    document.getElementById('nav').innerHTML = `
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/IMG_1854.jpeg" alt="Photo of John" width="60" height="60" class="d-inline-block" style="border-radius:20%">
+        <a class="navbar-brand" href="${base}index.html">
+            <img src="${base}images/IMG_1854.jpeg" alt="Photo of John" width="60" height="60" class="d-inline-block" style="border-radius:20%">
         </a>
-        <a class="navbar-brand navbg" href="index.html">John Doll</a>
+        <a class="navbar-brand navbg" href="${base}index.html">John Doll</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse navbar-nav-scroll" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active navbg" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link ${indexActive} navbg" aria-current="${indexAria}"  href="${base}index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle navbg" href="project.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle ${projectsActive} navbg" href="project.html" aria-current="${projectsAria}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Projects
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="projects.html">Projects Overview</a></li>
+                        <li><a class="dropdown-item" href="${base}projects.html">Projects Overview</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="projects/current.html">This Website</a></li>
-                        <li><a class="dropdown-item" href="projects/covid.html">COVID-19 Dynamic Dashboard</a></li>
-                        <li><a class="dropdown-item" href="projects/old.html">Old Website</a></li>
-                        <li><a class="dropdown-item" href="projects/checkers.html">Checkers</a></li>
+                        <li><a class="dropdown-item" href="${projects}current.html">This Website</a></li>
+                        <li><a class="dropdown-item" href="${projects}covid.html">COVID-19 Dynamic Dashboard</a></li>
+                        <li><a class="dropdown-item" href="${projects}old.html">Old Website</a></li>
+                        <li><a class="dropdown-item" href="${projects}checkers.html">Checkers</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="">Daily Tennis App (coming soon)</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbg" href="resume.html">Resume</a>
+                    <a class="nav-link navbg ${resumeActive}" href="${base}resume.html" aria-current="${resumeAria}">Resume</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle navbg" href="qualifications.html" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle navbg ${qualificationsActive}" href="qualifications.html" aria-current="${qualificationsAria}" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Qualifications
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="qualifications.html">Qualifications Overview</a></li>
+                        <li><a class="dropdown-item" href="${base}qualifications.html">Qualifications Overview</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="qualifications/education.html">Miami University</a></li>
-                        <li><a class="dropdown-item" href="qualifications/amazon2.html">Amazon (Summer 2022)</a></li>
-                        <li><a class="dropdown-item" href="qualifications/amazon.html">Amazon (Summer 2021)</a></li>
-                        <li><a class="dropdown-item" href="qualifications/hw.html">Hospitality Wifi</a></li>
-                        <li><a class="dropdown-item" href="qualifications/church.html">St. Mark's</a></li>
-                        <li><a class="dropdown-item" href="qualifications/marathon.html">Marathon</a></li>
+                        <li><a class="dropdown-item" href="${qualifications}education.html">Miami University</a></li>
+                        <li><a class="dropdown-item" href="${qualifications}amazon2.html">Amazon (Summer 2022)</a></li>
+                        <li><a class="dropdown-item" href="${qualifications}amazon.html">Amazon (Summer 2021)</a></li>
+                        <li><a class="dropdown-item" href="${qualifications}hw.html">Hospitality Wifi</a></li>
+                        <li><a class="dropdown-item" href="${qualifications}church.html">St. Mark's</a></li>
+                        <li><a class="dropdown-item" href="${qualifications}marathon.html">Marathon</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link navbg" href="contact.html">Contact Me</a>
+                    <a class="nav-link navbg ${contactActive}" href="${base}contact.html" aria-current="${contactAria}">Contact Me</a>
                 </li>
             </ul>
         </div>
     </div>
-    `;*/
-
-
-    
-});
+    `;
+}
 
 function footer() {
     // location of leetcode image
