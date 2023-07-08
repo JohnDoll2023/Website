@@ -64,6 +64,21 @@ $(document).ready(function(){
 });
 
 function footer() {
+    // location of leetcode image
+    var leetcodeImage = "images/leetcode.png";
+
+    // get document location
+    var path = document.location.pathname;
+
+    // count number of slashes
+    var count = path.split('/').length;
+
+    // for every slash over 6, add a "../" to the beginning of the path
+    for (var i = 0; i < count - 6; i++) {
+        leetcodeImage = "../" + leetcodeImage;
+    }
+
+    // create footer
     document.getElementById('footer').innerHTML = `
     <ul class="list-unstyled list-inline text-center">
         <li class="list-inline-item">
@@ -87,6 +102,11 @@ function footer() {
             </a>
         </li>
         <li class="list-inline-item">
+            <a class="btn-floating mx-1" href="https://leetcode.com/JohnDoll2023/" target="_blank">
+                <img src="${leetcodeImage}" id="leetcode" alt="Leetcode" width="24" height="24" style="border-style: none;" />
+            </a>
+        </li>
+        <li class="list-inline-item">
             <a class="btn-floating mx-1" href="https://www.strava.com/athletes/59946814" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="border-style: none;" viewBox="0 0 24 24"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg>
             </a>
@@ -97,7 +117,7 @@ function footer() {
             </a>
         </li>-->
     </ul>
-    <div class="footer-copyright text-center py-3" id="copyright"></div>
+    <div class="footer-copyright text-center" id="copyright"></div>
     `;
     copyright();
 }
@@ -110,6 +130,7 @@ function fader() {
     document.getElementById("fade").style.opacity = 1;
 }
 
+// rotate words on index page
 function rotator() {   
     var words = new Array("run.", "play tennis.", "be myself.", "use java.", "stay up late.", "workout.", "swim.", "sleep in.", "play fantasy baseball.", "code.", "throw frisbee.","have fun.", "be outside.", "play video games.", "compete.", "play baseball.", "fall asleep to thunderstorms.", "watch sports.", "make brackets for everything.", "play hockey.", "skate.", "make videos.", "be a creator.", "invent.", "be with my friends.", "watch the sunset.", "make things better.", "engineer.", "create websites.", "learn.", "catch up with friends.", "work on my computer.", "program.", "challenge myself.", "improve.", "be happy.", "spend time with family.", "make new things.", "innovate.");
     var random = Math.floor(Math.random()*words.length);

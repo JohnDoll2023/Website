@@ -17,6 +17,11 @@ body {
     padding-bottom: 150px;
 }
 
+#nav {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .navbg {
     background-color: #757575;
     color: black !important;
@@ -42,6 +47,10 @@ h5 {
 p {
     font-size: 40px;
     font-weight: bold; 
+}
+
+#leetcode {
+    filter: brightness(0%);
 }
 
 footer {
@@ -194,7 +203,6 @@ footer {
     color:lightgray !important;
 }
 
-
 @media screen and (min-width: 993px) {
     .zoom {transition: transform .2s;}
     .zoom:hover {
@@ -215,6 +223,3 @@ footer {
     p1 {font-size: 40px;
         font-weight: bold; }
 }
-
-
-
