@@ -10,9 +10,6 @@ function navbar() {
     // get document location
     var path = document.location.pathname;
 
-    // count number of slashes
-    var count = path.split('/').length;
-
     // qualifcations path
     var qualifications = "qualifications/";
 
@@ -35,38 +32,37 @@ function navbar() {
     var resumeActive = "";
     var qualificationsActive = "";
     var contactActive = "";
-
-    if (count != 6) {
+    
+    // if on qualifications page, set qualifications path
+    if (path.includes(qualifications)) {
+        qualifications = "";
+        projects = "../" + projects;
+        qualificationsAria = "page";
+        qualificationsActive = "active";
         // if not on home page, set base path
-        base = "../";
-        
-        // if on qualifications page, set qualifications path
-        if (path.includes(qualifications)) {
-            qualifications = "";
-            projects = "../" + projects;
-            qualificationsAria = "page";
-            qualificationsActive = "active";
-        }
-
-        // if on projects page, set projects path
-        if (path.includes(projects)) {
-            projects = "";
-            qualifications = "../" + qualifications;
-            projectsAria = "page";
-            projectsActive = "active";
-        }
-    } else {
-        // check if on index page
-        if (path.includes("index.html")) {
-            indexAria = "page";
-            indexActive = "active";;
-        } else if (path.includes("resume.html")) {
-            resumeAria = "page";
-            resumeActive = "active";
-        } else if (path.includes("contact.html")) {
-            contactAria = "page";
-            contactActive = "active";
-        }
+    base = "../";
+    } else if (path.includes(projects)) {
+        projects = "";
+        qualifications = "../" + qualifications;
+        projectsAria = "page";
+        projectsActive = "active";
+        // if not on home page, set base path
+    base = "../";
+    } else if (path.includes("index.html")) {
+        indexAria = "page";
+        indexActive = "active";
+    } else if (path.includes("projects.html")) {
+        projectsAria = "page";
+        projectsActive = "active";
+    } else if (path.includes("resume.html")) {
+        resumeAria = "page";
+        resumeActive = "active";
+    } else if (path.includes("qualifications.html")) {
+        qualificationsAria = "page";
+        qualificationsActive = "active";
+    } else if (path.includes("contact.html")) {
+        contactAria = "page";
+        contactActive = "active";
     }
 
     document.getElementById('nav').innerHTML = `
@@ -132,11 +128,8 @@ function footer() {
     // get document location
     var path = document.location.pathname;
 
-    // count number of slashes
-    var count = path.split('/').length;
-
-    // for every slash over 6, add a "../" to the beginning of the path
-    for (var i = 0; i < count - 6; i++) {
+    // if ot on home page, set base path
+    if (path.includes("qualifications/") || path.includes("projects/")) {
         leetcodeImage = "../" + leetcodeImage;
     }
 
