@@ -48,7 +48,8 @@ function navbar() {
         projectsActive = "active";
         // if not on home page, set base path
     base = "../";
-    } else if (path.includes("index.html")) {
+    // if path is index or if path is exactly johnmdoll.com
+    } else if (path.includes("index.html") || path == "/") {
         indexAria = "page";
         indexActive = "active";
     } else if (path.includes("projects.html")) {
